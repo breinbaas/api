@@ -2,4 +2,4 @@ fastapi[all]
 pymongo
 python-dotenv
 
-/home/breinbaas/leveelogic/dist/leveelogic-0.0.1-py3-none-any.whl
+# /home/breinbaas/leveelogic/dist/leveelogic-0.0.1-py3-none-any.whl
