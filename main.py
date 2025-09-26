@@ -3,6 +3,8 @@ from pymongo import AsyncMongoClient
 from dotenv import dotenv_values
 from contextlib import asynccontextmanager
 
+from leveelogic import hello
+
 config = dotenv_values(".env")
 
 mongodb_client: AsyncMongoClient = None
@@ -34,4 +36,4 @@ app = FastAPI(lifespan=lifespan)
 async def root():
     # This is just an example, you would perform async operations here
     # e.g., user_count = await mongodb_client[config["DB_NAME"]]["user"].count_documents({})
-    return {"message": "Welcome to the PyMongo tutorial!"}
+    return {"message": hello()}
